@@ -9,7 +9,7 @@ button.onclick = function(){
 
                 let parent = document.querySelector('#parent');
                 let p = document.createElement('a');
-                p.innerHTML = 'Sanyad';
+                p.innerHTML = 'Lisa is nice';
                 // сверху ввод дивки
                 p.className = 'vovan'
                 // сверху касс
