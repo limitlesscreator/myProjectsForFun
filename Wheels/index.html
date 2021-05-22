@@ -4,58 +4,76 @@
     <meta charset="UTF-8">
     <title>CarDriving</title>
 </head>
-<body  id="parent" >
+<body id="parent">
+<div class="main">
+    <div class="winner"></div>
 
-<div class="one">what's up :)</div>
-<br>
-<img class="wheel1" src="https://img.icons8.com/ios/452/wheel.png" alt="">
-<img class="wheel2" src="https://img.icons8.com/ios/452/wheel.png" alt="">
-<div class="title">pressing the right button on a mouse </div>
-<img class="car" src="https://multtov.net.ua/wp-content/uploads/2018/11/urok-animaciya-avtomobilya-3.png" alt="">
+    <div class="squares">
+        <div class="square num1"></div>
+        <div class="square num2"></div>
+        <div class="square num3"></div>
+    </div>
+    <div class="squares">
+        <div class="square num4"></div>
+        <div class="square num5"></div>
+        <div class="square num6"></div>
+    </div>
+    <div class="squares">
+        <div class="square num7"></div>
+        <div class="square num8"></div>
+        <div class="square num9"></div>
+    </div>
+</div>
 
 <style>
-    .title{
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 50px;
-        margin-top: 20px;
-        font-family: sans-serif;
-        color: white;
-        opacity: 0.7;
-        user-select: none;
-        background: #f50000;
+    body {
+        background: #114357;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #F29492, #114357);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #F29492, #114357); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     }
-.wheel1{
-    width: 80px;
-    /*transition: 1s;*/
-    position: absolute;
-    bottom: -6px;
-    left: 19px;
-}
-.wheel2{
-    width: 80px;
-    /*transition: 1s;*/
-    position: absolute;
-    bottom: -6px;
-    left: 257px;
-}
-.car{
-    width: 380px;
-    transform: scale(-1,1);
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-}
 
-body {
-    background:
-            radial-gradient(at bottom right, dodgerblue 0, dodgerblue 1em, lightskyblue 1em, lightskyblue 2em, deepskyblue 2em, deepskyblue 3em, gainsboro 3em, gainsboro 4em, lightsteelblue 4em, lightsteelblue 5em, deepskyblue 5em, deepskyblue 6em, lightskyblue 6em, lightskyblue 7em, transparent 7em, transparent 8em),
-            radial-gradient(at top left, transparent 0, transparent 1em, lightskyblue 1em, lightskyblue 2em, deepskyblue 2em, deepskyblue 3em, lightsteelblue 3em, lightsteelblue 4em, gainsboro 4em, gainsboro 5em, deepskyblue 5em, deepskyblue 6em, skyblue 6em, skyblue 7em, dodgerblue 7em, dodgerblue 8em, transparent 8em, transparent 20em),
-            radial-gradient(circle at center bottom, coral, darkslateblue);
-    background-blend-mode: overlay;
-    background-size: 8em 8em, 8em 8em, cover;
-}
+    .main {
+        opacity: .8;
+        width: 501px;
+        height: 501px;
+        background: #000;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 
+    .squares {
+        display: flex;
+    }
+
+    .square {
+        position: relative;
+        background: white;
+        width: 167px;
+        height: 167px;
+        border: solid darkgreen 2px;
+        user-select: none;
+    }
+
+    .size {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+        font-size: 80px;
+    }
+
+    .winner {
+        background: #9c2fcb;
+        color: cornsilk;
+        text-transform: uppercase;
+        font-size: 40px;
+        text-align: center;
+        font-family: sans-serif;
+    }
 </style>
 
 <script src="main.js"></script>
